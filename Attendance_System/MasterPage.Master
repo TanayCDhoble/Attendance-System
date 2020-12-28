@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Attendance.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title></title>
+    <link href="CSSFolder/MasterCSS.css" rel="stylesheet" />
+ 
+  
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <table class="auto-style1" >
+            <tr>
+                <td colspan="3">
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="XX-Large" ForeColor="White" Text="Attendance System"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style4">
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="223px" ImageUrl="~/Images/courses.png" Width="341px" PostBackUrl="~/CourseForm.aspx" />
+                </td>
+                <td class="auto-style4">
+                    <asp:ImageButton ID="ImageButton2" runat="server" Height="225px" ImageUrl="~/Images/Payments.png" Width="345px" PostBackUrl="~/PaymentForm.aspx" />
+                </td>
+                <td class="auto-style4">
+                    <asp:ImageButton ID="ImageButton3" runat="server" CssClass="auto-style1" Height="231px" ImageUrl="~/Images/Attendance.png" Width="347px" PostBackUrl="~/AttendanceForm.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <asp:ImageButton ID="ImageButton4" runat="server" Height="208px" ImageUrl="~/Images/FinalStudent.png" Width="333px" PostBackUrl="~/StudentForm.aspx" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton5" runat="server" Height="211px" ImageUrl="~/Images/Deactivation.png" Width="345px" PostBackUrl="~/Edit.aspx" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="auto-style2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <asp:ContentPlaceHolder ID="head" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+  
+        
+    
+    </form>
+</body>
+</html>
