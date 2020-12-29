@@ -27,7 +27,7 @@
                 <asp:TextBox ID="txtcoursename" runat="server" Height="45px" Width="236px"></asp:TextBox>
             </td>
             <td>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="RequiredFieldValidator">Incorrect</asp:RequiredFieldValidator>
+                
             </td>
             
         </tr>
